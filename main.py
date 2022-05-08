@@ -3,10 +3,10 @@ import numpy as np
 import math as math
 
 ##################################################################
-############################ Funckje #############################
+############################ Funkcje #############################
 ##################################################################
 
-# Funckja oblicza entropie na podstawie wzoru: -pi * log2 pi
+# Funkcja oblicza entropie na podstawie wzoru: -pi * log2 pi
 # pi = n/N
 def entropy(n, N):
     if N == 0:
@@ -18,7 +18,7 @@ def entropy(n, N):
         else:
             return 0
 
-# Funckja podaje, w którym miejscu należy podzielić tabelę
+# Funkcja podaje, w którym miejscu należy podzielić tabelę
 def findMaxIndex(tab):
     maximum = max(map(max, tab))
     for i in range(0, len(tab)):
@@ -27,7 +27,7 @@ def findMaxIndex(tab):
                 index = [i, j]
                 return index
 
-# Funckja sprawdza czy w danym wektorze wszystkie wartości są równe
+# Funkcja sprawdza czy w danym wektorze wszystkie wartości są równe
 def allEqual(iterator):
     return len(set(iterator)) <= 1
 
@@ -115,9 +115,9 @@ def partEntropy(tab):
 questions = [["Czy budżet mniejszy od 1000 zł?",
               "Czy budżet pomiędzy 1000 a 3000 zł?",
               "Czy budżet powyżej 3000 zł?"],
-             ["Czy podrużujemy samochodem?",
-              "Czy podrużujemy pociagiem?",
-              "Czy podrużujemy samolotem?"],
+             ["Czy podróżujemy samochodem?",
+              "Czy podróżujemy pociagiem?",
+              "Czy podróżujemy samolotem?"],
              ["Czy pobyt w okresie przedsezonowym?",
               "Czy pobyt w sezonie wakacyjnym?",
               "Czy pobyt po sezonie wakacyjnym?"],
